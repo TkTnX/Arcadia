@@ -1,0 +1,10 @@
+@mixin absolute-item {
+  content: "";
+  position: absolute;
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+
+  @content;
+}

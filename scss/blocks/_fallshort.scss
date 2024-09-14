@@ -1,0 +1,33 @@
+.fallshort {
+  margin-top: 320px;
+}
+
+.fallshort__desc {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 70px;
+  max-width: 1318px;
+
+  span {
+    color: #73777b;
+  }
+}
+.fallshort__users {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 74px;
+  border-radius: 50px;
+  background: rgba(131, 166, 255, 0.2);
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+.fallshort__user {
+  margin-left: -20px;
+}
