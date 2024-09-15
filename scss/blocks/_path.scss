@@ -18,6 +18,17 @@
       margin-top: -80%;
     }
   }
+ &::after {
+    @include absolute-item() {
+      background-image: url("./../../images/blurs/risks-right.svg");
+      width: 1545px;
+      height: 3044px;
+      right: 0;
+      z-index: -1;
+      margin-top: -80%;
+    }
+  }
+
 }
 
 .path__blocks {
@@ -28,7 +39,7 @@
   display: flex;
   align-items: flex-end;
   margin-left: 190px;
-  gap: 40px ;
+  gap: 40px;
 }
 
 .path__block {
@@ -46,19 +57,18 @@
   flex: 1;
 }
 
-
 .path__block-number {
-font-family: var(--font-secondary);
-font-size: 40px;
-font-weight: 400;
-line-height: 1.25; /* 125% */
+  font-family: var(--font-secondary);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.25; /* 125% */
 }
 .path__block-text {
-font-size: 20px;
-font-weight: 400;
-line-height: 1.4; /* 140% */
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4; /* 140% */
 }
 
 .path__block-right {
-    margin-bottom: 128px;
+  margin-bottom: 128px;
 }
