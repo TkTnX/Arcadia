@@ -9,13 +9,21 @@
   --container-width: 1450px;
   --container-padding: 15px;
 }
+html, body {
+  // height: 100%;
+  margin: 0;
+}
 
 body {
+  //  display: flex;
+  // flex-direction: column;
+  // min-height: 100vh;
   font-family: var(--font-main);
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
   background: #010101;
+  overflow-x: hidden;
 
   &::before {
     @include absolute-item() {
@@ -39,6 +47,10 @@ body {
     }
   }
 }
+
+// main {
+//   flex: 1; 
+// }
 
 .container {
   max-width: var(--container-width);
@@ -84,3 +96,5 @@ margin-right: auto;
 .line {
   margin-top: 223px;
 }
+
+
