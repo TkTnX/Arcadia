@@ -9,7 +9,8 @@
   --container-width: 1450px;
   --container-padding: 15px;
 }
-html, body {
+html,
+body {
   // height: 100%;
   margin: 0;
 }
@@ -27,7 +28,7 @@ body {
 
   &::before {
     @include absolute-item() {
-      background-image: url("./../../images/blurs/top-left.svg");
+      background-image: url("/images/blurs/top-left.svg");
       width: 1290px;
       height: 2230px;
       left: 0;
@@ -38,7 +39,7 @@ body {
 
   &::after {
     @include absolute-item() {
-      background-image: url("./../../images/blurs/top-right.svg");
+      background-image: url("/images/blurs/top-right.svg");
       width: 1453px;
       height: 1656px;
       right: 0;
@@ -49,7 +50,7 @@ body {
 }
 
 // main {
-//   flex: 1; 
+//   flex: 1;
 // }
 
 .container {
@@ -76,25 +77,22 @@ body {
   font-family: var(--font-secondary);
   font-size: 20px;
   font-style: normal;
-  line-height: 1.4; 
+  line-height: 1.4;
   text-transform: uppercase;
 }
 
-
 .title-2 {
-text-align: center;
-font-family: var(--font-secondary);
-font-size: 51px;
-font-style: normal;
-font-weight: 400;
-line-height: 64px; /* 125.49% */
-max-width: 1038px;
-margin-left: auto;
-margin-right: auto;
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px; /* 125.49% */
+  max-width: 1038px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .line {
   margin-top: 223px;
 }
-
-

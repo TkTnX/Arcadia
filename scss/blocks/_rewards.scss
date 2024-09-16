@@ -3,7 +3,7 @@
 
   &::after {
     @include absolute-item() {
-      background-image: url("./../../images/blurs/rewards-right.svg");
+      background-image: url("/images/blurs/rewards-right.svg");
       width: 1760px;
       height: 3224px;
       right: 0;

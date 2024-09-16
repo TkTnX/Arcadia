@@ -3,7 +3,7 @@
 
   &::before {
     @include absolute-item() {
-      background-image: url("./../../images/blurs/tokenomics-right.svg");
+      background-image: url("/images/blurs/tokenomics-right.svg");
       width: 1920px;
       height: 3224px;
       right: 0;
@@ -46,7 +46,7 @@
 }
 
 .tokenomics__block-left {
-  background-image: url("./../../images/tokenomics/01.jpg");
+  background-image: url("/images/tokenomics/01.jpg");
 
   background-position: center center; /* x y */
   background-size: cover;
@@ -79,7 +79,7 @@
 }
 
 .tokenomics__block-right {
-  background-image: url("./../../images/tokenomics/02.jpg");
+  background-image: url("/images/tokenomics/02.jpg");
   width: 100%;
   max-width: 710px;
   background-position: center center; /* x y */

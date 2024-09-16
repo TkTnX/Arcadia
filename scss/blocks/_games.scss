@@ -1,9 +1,9 @@
 .games {
   padding-top: 315px;
   color: #fff;
- &::after {
+  &::after {
     @include absolute-item() {
-      background-image: url("./../../images/blurs/games-right.svg");
+      background-image: url("/images/blurs/games-right.svg");
       width: 1683px;
       height: 2959px;
       right: 0;
@@ -41,5 +41,4 @@
   border-radius: 30px;
   background: rgba(184, 207, 255, 0.15);
   box-shadow: 0px 4px 20px 0px rgba(20, 82, 116, 0.1);
-
 }

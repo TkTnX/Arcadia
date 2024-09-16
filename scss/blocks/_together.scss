@@ -3,11 +3,11 @@
 
   &::before {
     @include absolute-item() {
-      background-image: url("./../../images/blurs/together-left.svg");
+      background-image: url("/images/blurs/together-left.svg");
       width: 1387px;
       height: 3319px;
-        left: 0;
-        margin-top: -100%;
+      left: 0;
+      margin-top: -100%;
       z-index: -1;
     }
   }
@@ -21,10 +21,9 @@
   background: #1b75b3;
   overflow: hidden;
 
-
   &::after {
     @include absolute-item() {
-      background-image: url("./../../images/together/girl.png");
+      background-image: url("/images/together/girl.png");
       width: 100%;
       max-width: 658px;
       height: 100%;
@@ -35,14 +34,13 @@
   }
   &::before {
     @include absolute-item() {
-      background-image: url("./../../images/together/line.svg");
+      background-image: url("/images/together/line.svg");
       width: 100%;
       max-width: 760px;
       height: 100%;
       max-height: 566px;
       bottom: 40px;
       right: -150px;
-
     }
   }
 }
