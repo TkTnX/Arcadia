@@ -30,6 +30,7 @@ body {
       @media (max-width: 768px) {
         width: 469px;
         height: 662px;
+        filter: blur(10px);
       }
     }
   }
@@ -45,6 +46,7 @@ body {
       @media (max-width: 768px) {
         width: 501px;
         height: 574px;
+        filter: blur(10px);
       }
     }
   }
@@ -93,8 +95,21 @@ body {
   max-width: 1038px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: 992px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .line {
   margin-top: 223px;
+
+  @media (max-width: 768px) {
+    margin-top: 100px;
+    min-width: 1120px;
+  }
 }

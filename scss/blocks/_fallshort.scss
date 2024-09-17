@@ -8,7 +8,18 @@
       left: 0;
       z-index: -1;
       margin-top: -500px;
+
+      @media (max-width: 768px) {
+        width: 829px;
+        height: 1079px;
+        margin-top: -140px;
+        filter: blur(20px);
+      }
     }
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 130px;
   }
 }
 
@@ -23,6 +34,11 @@
   span {
     color: #73777b;
   }
+
+  @media (max-width: 992px) {
+    font-size: 20px;
+    margin-top: 30px;
+  }
 }
 .fallshort__users {
   display: flex;
@@ -36,6 +52,10 @@
   margin-right: auto;
   padding: 10px;
   padding-left: 30px;
+
+  @media (max-width: 992px) {
+    margin-top: 40px;
+  }
 }
 
 .fallshort__user {
@@ -48,6 +68,11 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    margin-top: 70px;
+    gap: 10px;
+  }
 }
 
 .fallshort__block {
@@ -64,6 +89,18 @@
   padding-top: 70px;
   padding-left: 40px;
   padding-right: 40px;
+
+  @media (max-width: 1451px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 35px;
+    height: 726px;
+  }
+
+  @media (max-width: 768px) {
+    height: 550px;
+    overflow: hidden;
+  }
 }
 
 .fallshort__block-left {
@@ -78,6 +115,10 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
+      @media (max-width: 1459px) {
+        max-width: 300px;
+        max-height: 298px;
+      }
     }
   }
 }
@@ -89,6 +130,10 @@
 
 .fallshort__block-top {
   padding-left: 50px;
+
+  @media (max-width: 1451px) {
+    padding-left: 10px;
+  }
 }
 .fallshort__block-text {
   margin-top: 50px;
@@ -97,6 +142,10 @@
   font-weight: 400;
   line-height: 1.4; /* 140% */
   padding-right: 80px;
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
 }
 
 .fallshort__block-btn {
@@ -121,6 +170,18 @@
   &:hover {
     background: rgba(0, 0, 0, 0.6);
   }
+
+  @media (max-width: 1451px) {
+    padding: 16px 20px;
+    font-size: 12px;
+    left: unset;
+    right: 100px;
+    bottom: 18px;
+  }
+
+  @media (max-width: 768px) {
+    right: 20px;
+  }
 }
 
 .fallshort__block-right {
@@ -136,6 +197,12 @@
       left: 55%;
       transform: translateX(-50%);
       border-radius: 0 80px 0 0;
+
+      @media (max-width: 1459px) {
+        left: 50%;
+        max-width: 350px;
+        max-height: 285px;
+      }
     }
   }
 }
@@ -143,4 +210,14 @@
 .fallshort__block-btn-right {
   bottom: 171px;
   left: 30px;
+  @media (max-width: 1451px) {
+    padding: 16px 20px;
+    font-size: 12px;
+    right: unset;
+    left: 125px;
+    bottom: 90px;
+  }
+  @media (max-width: 768px) {
+    left: 20px;
+  }
 }

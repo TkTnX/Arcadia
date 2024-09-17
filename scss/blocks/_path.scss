@@ -8,6 +8,11 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media (max-width: 768px) {
+    height: 720px;
+margin-top: 160px;
+  }
+
   &::before {
     @include absolute-item() {
       background-image: url("/images/blurs/path-left.svg");
@@ -16,6 +21,12 @@
       left: 0;
       z-index: -1;
       margin-top: -80%;
+
+      @media (max-width: 769px) {
+        width: 600px;
+        height: 1500px;
+        filter: blur(20px);
+      }
     }
   }
   &::after {
@@ -26,6 +37,11 @@
       right: 0;
       z-index: -1;
       margin-top: -80%;
+      @media (max-width: 769px) {
+        width: 600px;
+        height: 1500px;
+        filter: blur(20px);
+      }
     }
   }
 }
@@ -39,6 +55,13 @@
   align-items: flex-end;
   margin-left: 190px;
   gap: 40px;
+
+  @media (max-width: 1500px) {
+    margin-left: 0;
+  }
+  @media (max-width: 1121px) {
+    gap: 10px;
+  }
 }
 
 .path__block {
@@ -54,6 +77,11 @@
   background: rgba(66, 70, 77, 0.3);
   backdrop-filter: blur(45px);
   flex: 1;
+
+  @media (max-width: 1121px) {
+    padding: 30px;
+    width: 360px;
+  }
 }
 
 .path__block-number {
@@ -66,8 +94,16 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 1.4; /* 140% */
+
+  @media (max-width: 1121px) {
+    font-size: 14px;
+  }
 }
 
 .path__block-right {
   margin-bottom: 128px;
+
+  @media (max-width: 1121px) {
+    margin-bottom: 70px;
+  }
 }

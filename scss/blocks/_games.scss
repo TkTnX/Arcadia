@@ -13,9 +13,16 @@
       @media (max-width: 768px) {
         width: 345px;
         height: 540px;
+        top: unset;
         bottom: 0;
+        fill: #2f7fff;
+        filter: blur(200px);
       }
     }
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 100px;
   }
 }
 

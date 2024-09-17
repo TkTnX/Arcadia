@@ -9,8 +9,23 @@
       left: 0;
       margin-top: -100%;
       z-index: -1;
+
+      @media (max-width: 769px) {
+        width: 800px;
+        height: 1500px;
+        filter: blur(20px);
+      }
     }
   }
+
+  @media (max-width: 769px) {
+    padding-top: 120px;
+  }
+}
+
+.together__hint {
+  position: relative;
+  z-index: 1;
 }
 
 .together__wrapper {
@@ -21,6 +36,10 @@
   background: #1b75b3;
   overflow: hidden;
 
+  @media (max-width: 1024px) {
+    padding: 35px 30px;
+  }
+
   &::after {
     @include absolute-item() {
       background-image: url("/images/together/girl.png");
@@ -30,6 +49,17 @@
       max-height: 658px;
       bottom: 0;
       right: 0;
+
+      @media (max-width: 1270px) {
+        max-width: 500px;
+        max-height: 500px;
+      }
+
+      @media (max-width: 1024px) {
+        max-width: 355px;
+        max-height: 355px;
+        right: -50px;
+      }
     }
   }
   &::before {
@@ -41,6 +71,15 @@
       max-height: 566px;
       bottom: 40px;
       right: -150px;
+      @media (max-width: 1270px) {
+        max-width: 660px;
+        max-height: 486px;
+      }
+      @media (max-width: 1024px) {
+        max-width: 400px;
+        max-height: 300px;
+        right: -80px;
+      }
     }
   }
 }
@@ -53,6 +92,17 @@
   text-align: left;
   margin-left: 0;
   margin-top: 40px;
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+
+  @media (max-width: 1180px) {
+    font-size: 28px;
+  }
+  @media (max-width: 1024px) {
+    font-size: 19px;
+    margin-top: 30px;
+  }
 }
 .together__desc {
   margin-top: 45px;
@@ -60,8 +110,22 @@
   font-weight: 400;
   line-height: 1.41; /* 141.667% */
   max-width: 692px;
+  position: relative;
+  z-index: 1;
+  @media (max-width: 1180px) {
+    font-size: 16px;
+    max-width: 485px;
+    margin-top: 15px;
+  }
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
 }
 
 .together__btn {
   margin-top: 70px;
+
+  @media (max-width: 1180px) {
+    margin-top: 30px;
+  }
 }
