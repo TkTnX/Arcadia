@@ -3,14 +3,13 @@
   &::before {
     @include absolute-item() {
       background-image: url("/images/blurs/fallshort-left.svg");
-      width: 1545px;
+      width: 100%;
       height: 3224px;
       left: 0;
       z-index: -1;
       margin-top: -500px;
 
       @media (max-width: 768px) {
-        width: 829px;
         height: 1079px;
         margin-top: -140px;
         filter: blur(20px);
@@ -56,10 +55,17 @@
   @media (max-width: 992px) {
     margin-top: 40px;
   }
+  @media (max-width: 760px) {
+    margin-left: 0;
+    padding-left: 20px;
+  }
 }
 
 .fallshort__user {
-  margin-left: -20px;
+  margin-left: -10px;
+  @media (max-width: 760px) {
+    width: 40px;
+  }
 }
 
 .fallshort__blocks {
@@ -72,6 +78,13 @@
   @media (max-width: 768px) {
     margin-top: 70px;
     gap: 10px;
+  }
+
+  @media (max-width: 735px) {
+    flex-direction: column;
+    align-items: unset;
+    justify-content: unset;
+    gap: 40px;
   }
 }
 
@@ -100,6 +113,10 @@
   @media (max-width: 768px) {
     height: 550px;
     overflow: hidden;
+  }
+  @media (max-width: 735px) {
+    height: 535px;
+    flex: unset;
   }
 }
 
@@ -145,6 +162,11 @@
 
   @media (max-width: 800px) {
     font-size: 14px;
+  }
+
+  @media (max-width: 420px) {
+    margin-top: 30px;
+    padding-right: 0;
   }
 }
 
@@ -202,6 +224,9 @@
         left: 50%;
         max-width: 350px;
         max-height: 285px;
+      }
+      @media (max-width: 420px) {
+        border-radius: 0;
       }
     }
   }

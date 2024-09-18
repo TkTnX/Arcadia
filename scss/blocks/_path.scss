@@ -10,20 +10,19 @@
 
   @media (max-width: 768px) {
     height: 720px;
-margin-top: 160px;
+    margin-top: 160px;
   }
 
   &::before {
     @include absolute-item() {
       background-image: url("/images/blurs/path-left.svg");
-      width: 1200px;
+      width: 100%;
       height: 3664px;
       left: 0;
       z-index: -1;
       margin-top: -80%;
 
       @media (max-width: 769px) {
-        width: 600px;
         height: 1500px;
         filter: blur(20px);
       }
@@ -32,13 +31,12 @@ margin-top: 160px;
   &::after {
     @include absolute-item() {
       background-image: url("/images/blurs/risks-right.svg");
-      width: 1545px;
+      width: 100%;
       height: 3044px;
       right: 0;
       z-index: -1;
       margin-top: -80%;
       @media (max-width: 769px) {
-        width: 600px;
         height: 1500px;
         filter: blur(20px);
       }
@@ -62,6 +60,20 @@ margin-top: 160px;
   @media (max-width: 1121px) {
     gap: 10px;
   }
+  @media (max-width: 750px) {
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    transform: translate(0);
+    margin: 0 20px;
+  }
+  @media (max-width: 450px) {
+    align-items: flex-start;
+    margin: 0;
+  }
+  @media (max-width: 380px) {
+    margin-top: 20px;
+  }
 }
 
 .path__block {
@@ -81,6 +93,14 @@ margin-top: 160px;
   @media (max-width: 1121px) {
     padding: 30px;
     width: 360px;
+  }
+  @media (max-width: 450px) {
+    width: 292px;
+    padding: 20px;
+  }
+
+  @media (max-width: 380px) {
+    width: 262px;
   }
 }
 
@@ -105,5 +125,9 @@ margin-top: 160px;
 
   @media (max-width: 1121px) {
     margin-bottom: 70px;
+  }
+
+  @media (max-width: 750px) {
+    margin-left: 60px;
   }
 }

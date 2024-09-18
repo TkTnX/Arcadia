@@ -16,18 +16,16 @@ body {
   line-height: 1.5;
   color: #fff;
   background: #010101;
-  overflow-x: hidden;
   &::before {
     @include absolute-item() {
       background-image: url("/images/blurs/top-left.svg");
-      width: 1290px;
+      width: 100%;
       height: 2230px;
       left: 0;
       top: 0;
       z-index: -1;
 
       @media (max-width: 768px) {
-        width: 469px;
         height: 662px;
         filter: blur(10px);
       }
@@ -37,13 +35,12 @@ body {
   &::after {
     @include absolute-item() {
       background-image: url("/images/blurs/top-right.svg");
-      width: 1453px;
+      width: 100%;
       height: 1656px;
       right: 0;
       top: 0;
       z-index: -1;
       @media (max-width: 768px) {
-        width: 501px;
         height: 574px;
         filter: blur(10px);
       }
@@ -55,6 +52,10 @@ body {
   max-width: var(--container-width);
   padding: 0 var(--container-padding);
   margin: 0 auto;
+
+  @media (max-width: 420px) {
+    padding: 0 5px;
+  }
 }
 
 .hint {
@@ -82,6 +83,9 @@ body {
     font-size: 11px;
     padding: 8px 20px;
   }
+  @media (max-width: 360px) {
+    margin-left: 0;
+  }
 }
 
 .title-2 {
@@ -102,13 +106,21 @@ body {
   @media (max-width: 768px) {
     font-size: 20px;
   }
+  @media (max-width: 362px) {
+    text-align: left;
+    line-height: 1.2;
+  }
+}
+
+.line__wrapper {
+  width: 100%;
+  overflow: hidden;
 }
 
 .line {
   margin-top: 223px;
-
+  min-width: 1120px;
   @media (max-width: 768px) {
     margin-top: 100px;
-    min-width: 1120px;
   }
 }

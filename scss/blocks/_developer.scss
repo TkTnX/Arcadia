@@ -12,9 +12,14 @@
   border-radius: 40px;
   padding: 70px 80px;
   position: relative;
+  overflow: hidden;
 
   @media (max-width: 1330px) {
     padding: 35px 30px;
+  }
+
+  @media (max-width: 700px) {
+    height: 741px;
   }
 }
 
@@ -31,6 +36,10 @@
 
 .developer__list {
   margin-top: 55px;
+
+  @media (max-width: 500px) {
+    margin-top: 20px;
+  }
 }
 
 .developer__img {
@@ -52,6 +61,19 @@
     max-height: 246px;
     bottom: 50px;
     border-radius: 15px;
+  }
+  @media (max-width: 700px) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    max-width: 340px;
+    max-height: 350px;
+  }
+
+  @media (max-width: 400px) {
+      max-width: 220px;
+      max-height: 226px;
   }
 }
 

@@ -8,9 +8,11 @@ burgerMenuButton.addEventListener("click", () => {
   burgerMenuButton.classList.toggle("burger-button__active");
 });
 
+
+
 // Slider
 const rewardsSwiper = new Swiper(".rewards__swiper", {
-  slidesPerView: 2,
+  slidesPerView: 1.2,
   spaceBetween: 10,
 
   pagination: {
@@ -24,6 +26,9 @@ const rewardsSwiper = new Swiper(".rewards__swiper", {
   },
 
   breakpoints: {
+    666: {
+      slidesPerView: 2,
+    },
     1410: {
       slidesPerView: 3,
       spaceBetween: 30,
