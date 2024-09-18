@@ -1,0 +1,49 @@
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background: #000;
+  display: none;
+}
+
+.mobile-menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: max-content;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mobile-menu__title {
+  font-size: 28px;
+}
+
+.mobile-menu__list {
+  display: grid;
+  text-align: center;
+  gap: 50px;
+  font-size: 17px;
+  margin-top: 60px;
+}
+
+.mobile-menu__item a {
+  color: #fff;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.mobile-menu__btn {
+  padding: 10px 15px;
+  margin-top: 80px;
+}
+
+.burger-menu__active {
+  display: block;
+}
+

@@ -17,7 +17,6 @@ body {
   color: #fff;
   background: #010101;
   overflow-x: hidden;
-
   &::before {
     @include absolute-item() {
       background-image: url("/images/blurs/top-left.svg");
